@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Raleway } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import MainLayout from "@/components/MainLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ 
@@ -22,10 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${raleway.variable}`}>
-        <Navbar />
-        <main className="pt-16">
+        <MainLayout>
           {children}
-        </main>
+        </MainLayout>
       </body>
     </html>
   );
