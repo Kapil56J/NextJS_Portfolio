@@ -98,7 +98,7 @@ export default function Contact() {
              lineHeight: 2.5,
              marginTop: '-1em'
            }}>
-          I'M ALWAYS OPEN TO DISCUSSING NEW PROJECTS, CREATIVE IDEAS, OR OPPORTUNITIES TO BE PART OF YOUR VISIONS.
+          I&apos;M ALWAYS OPEN TO DISCUSSING NEW PROJECTS, CREATIVE IDEAS, OR OPPORTUNITIES TO BE PART OF YOUR VISIONS.
         </p>
         
         <p className="text-gray-700 uppercase font-raleway mb-8"

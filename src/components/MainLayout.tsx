@@ -126,7 +126,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                    lineHeight: 2.5,
                    marginTop: '-1em'
                  }}>
-                I'm a software developer with knowledge of Next.js, React.js, and React Native, specializing in creating responsive web applications. 
+                I&apos;m a software developer with knowledge of Next.js, React.js, and React Native, specializing in creating responsive web applications. 
                 I have also built 2 native apps which are available on the Play Store.
               </p>
               

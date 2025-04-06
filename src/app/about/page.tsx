@@ -98,7 +98,7 @@ export default function About() {
                lineHeight: 2.5,
                marginTop: '-1em'
              }}>
-            I believe in writing clean, maintainable code and following best practices. My approach involves understanding project requirements thoroughly, planning effectively, and implementing solutions that are both efficient and scalable. I'm passionate about staying updated with the latest technologies and continuously improving my skills.
+            I believe in writing clean, maintainable code and following best practices. My approach involves understanding project requirements thoroughly, planning effectively, and implementing solutions that are both efficient and scalable. I&apos;m passionate about staying updated with the latest technologies and continuously improving my skills.
           </p>
         </div>
       </section>
