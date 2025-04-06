@@ -5,7 +5,7 @@ export default function Project() {
   const projects = [
     {
       id: 1,
-      title: 'CountryInfo Mobile App',
+      title: 'CountryInfo App',
       description: 'A comprehensive mobile application that provides detailed information about countries worldwide. Users can search for countries, view detailed information including population, capital, languages, currencies, and more. The app features a clean, intuitive interface with smooth navigation and responsive design.',
       technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'REST API', 'Vercel'],
       liveDemoUrl: 'https://country-info-eight.vercel.app/',
