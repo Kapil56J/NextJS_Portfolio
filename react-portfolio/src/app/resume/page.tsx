@@ -50,14 +50,14 @@ export default function Resume() {
              marginTop: '-1em'
            }}>
           <a 
-            href="https://github.com/kapiljadhav5656" 
+            href="https://github.com/Kapil56J" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline"
           >
             GITHUB
           </a> | <a 
-            href="https://www.linkedin.com/in/kapil-jadhav-5656/" 
+            href="https://www.linkedin.com/in/kapil-jadhav5656/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline"
@@ -308,7 +308,7 @@ export default function Resume() {
                 LINK
               </a>
             </h2>
-            <p className="text-gray-700 uppercase font-raleway mb-2"
+            <p className="text-gray-900 uppercase font-raleway mb-2"
                style={{
                  fontFamily: 'Raleway, Helvetica, sans-serif',
                  fontSize: '0.7em',
@@ -317,7 +317,49 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              REACT NATIVE, TYPESCRIPT
+              REACT NATIVE, TYPESCRIPT, REDUX, REST API, FIREBASE, Push Notifications
+            </p>
+            <p className="text-gray-700 uppercase font-raleway"
+               style={{
+                 fontFamily: 'Raleway, Helvetica, sans-serif',
+                 fontSize: '0.7em',
+                 fontWeight: 400,
+                 letterSpacing: '0.2em',
+                 lineHeight: 2.5,
+                 marginTop: '-1em'
+               }}>
+              Health Tracker App – Developed a cross-platform health and fitness app using React Native, integrating features like activity tracking, meal logging, and personalized health insights. Implemented secure authentication, API integrations for real-time health data, and optimized performance for a seamless user experience.
+            </p>
+          </div>
+        </div>
+        <div className="space-y-6">
+          <div className="mb-8">
+            <h2 
+              className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase mb-4"
+              style={{ 
+                fontSize: '0.9em', 
+                letterSpacing: '0.15em' 
+              }}
+            >
+              Healthier 901 APP | <a 
+                href="https://play.google.com/store/apps/details?id=com.healthier901.app&hl=en_IN&pli=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className=" hover:text-blue-500 underline"
+              >
+                LINK
+              </a>
+            </h2>
+            <p className="text-gray-900 uppercase font-raleway mb-2"
+               style={{
+                 fontFamily: 'Raleway, Helvetica, sans-serif',
+                 fontSize: '0.7em',
+                 fontWeight: 400,
+                 letterSpacing: '0.2em',
+                 lineHeight: 2.5,
+                 marginTop: '-1em'
+               }}>
+              REACT NATIVE, TYPESCRIPT, REDUX, REST API
             </p>
             <p className="text-gray-700 uppercase font-raleway"
                style={{
