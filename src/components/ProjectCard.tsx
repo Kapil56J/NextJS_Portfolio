@@ -19,7 +19,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   sourceCodeUrl
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div 
+      className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      style={{
+        border: '1px solid #a0a0a04d'
+      }}
+    >
       <div className="p-6">
         <h1   className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase mb-6"
           style={{ 
@@ -48,11 +53,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-raleway"
                 style={{
                     fontFamily: 'Raleway, Helvetica, sans-serif',
-                    fontSize: '0.8em',
+                    fontSize: '0.7em',
                     fontWeight: 400,
-                    letterSpacing: '0.2em',
-                    lineHeight: 2.5
-                  }}
+                    letterSpacing: '0.2em'
+                }}
               >
                 {tech}
               </span>
@@ -65,7 +69,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={liveDemoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-transparent border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-colors duration-300 font-raleway text-sm uppercase tracking-wider"
+            className="inline-flex items-center justify-center bg-transparent border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-400 hover:text-white transition-colors duration-300 font-raleway text-sm uppercase tracking-wider"
             style={{
               fontFamily: 'Raleway, Helvetica, sans-serif',
               fontSize: '0.8em',

@@ -19,10 +19,10 @@ export default function About() {
           ABOUT ME
         </h1>
         <div className="space-y-6">
-          <p className="text-gray-700 uppercase font-raleway"
+          <p className="text-gray-700 font-raleway"
              style={{
                fontFamily: 'Raleway, Helvetica, sans-serif',
-               fontSize: '0.7em',
+               fontSize: '0.8em',
                fontWeight: 400,
                letterSpacing: '0.2em',
                lineHeight: 2.5,
@@ -41,10 +41,10 @@ export default function About() {
             WHAT I DO
           </h2>
           
-          <p className="text-gray-700 uppercase font-raleway"
+          <p className="text-gray-700 font-raleway"
              style={{
                fontFamily: 'Raleway, Helvetica, sans-serif',
-               fontSize: '0.7em',
+               fontSize: '0.8em',
                fontWeight: 400,
                letterSpacing: '0.2em',
                lineHeight: 2.5,
@@ -63,10 +63,10 @@ export default function About() {
             SKILLS & EXPERTISE
           </h2>
           
-          <p className="text-gray-700 uppercase font-raleway"
+          <p className="text-gray-700 font-raleway"
              style={{
                fontFamily: 'Raleway, Helvetica, sans-serif',
-               fontSize: '0.7em',
+               fontSize: '0.8em',
                fontWeight: 400,
                letterSpacing: '0.2em',
                lineHeight: 2.5,
@@ -89,10 +89,10 @@ export default function About() {
             WORK APPROACH
           </h2>
           
-          <p className="text-gray-700 uppercase font-raleway"
+          <p className="text-gray-700  font-raleway"
              style={{
                fontFamily: 'Raleway, Helvetica, sans-serif',
-               fontSize: '0.7em',
+               fontSize: '0.8em',
                fontWeight: 400,
                letterSpacing: '0.2em',
                lineHeight: 2.5,

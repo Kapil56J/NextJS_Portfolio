@@ -226,7 +226,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
             <div className="border-b border-dotted border-gray-300 my-2"></div>
 
-            <div className="mt-auto mb-8">
+            <div className="mt-2 mb-8">
               <div className="flex justify-start space-x-6">
                 <a href="https://github.com/Kapil56J" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

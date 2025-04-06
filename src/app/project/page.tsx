@@ -30,9 +30,14 @@ export default function Project() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div 
+      className="bg-white rounded-lg p-8 mb-16"
+      style={{
+        border: '1px solid #a0a0a04d'
+      }}
+    >
       <h1 
-        className="text-2xl font-raleway font-semibold mb-8 tracking-widest uppercase"
+        className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase mb-6"
         style={{ 
           fontSize: '1.2em', 
           letterSpacing: '0.15em' 
