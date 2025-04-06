@@ -1,8 +1,16 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Top Navbar */}
@@ -22,9 +30,11 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                   Kapil Jadhav
                 </Link>
               </div>
-              <div className="h-4 w-px bg-gray-300 mr-4" />
+              <div className="h-4 w-px bg-gray-300 mr-4 hidden md:block" />
             </div>
-            <div className="hidden md:flex items-center space-x-0">
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-0 ml-4">
               <Link
                 href="/about"
                 className="px-3 py-2 text-sm font-medium font-raleway tracking-widest uppercase text-gray-600 hover:text-blue-600"
@@ -57,14 +67,72 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 Contact
               </Link>
             </div>
+            
+            {/* Mobile Menu Button */}
+            <div className="md:hidden ml-auto">
+              <button
+                onClick={toggleMobileMenu}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                {!isMobileMenuOpen ? (
+                  <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                ) : (
+                  <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Mobile Menu */}
+        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg text-left">
+            <Link
+              href="/about"
+              className="block px-3 py-2 text-sm font-medium font-raleway tracking-widest uppercase text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+              style={{ fontSize: '0.7em', letterSpacing: '0.25em' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/resume"
+              className="block px-3 py-2 text-sm font-medium font-raleway tracking-widest uppercase text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+              style={{ fontSize: '0.7em', letterSpacing: '0.25em' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Resume
+            </Link>
+            <Link
+              href="/project"
+              className="block px-3 py-2 text-sm font-medium font-raleway tracking-widest uppercase text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+              style={{ fontSize: '0.7em', letterSpacing: '0.25em' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Project
+            </Link>
+            <Link
+              href="/contact"
+              className="block px-3 py-2 text-sm font-medium font-raleway tracking-widest uppercase text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+              style={{ fontSize: '0.7em', letterSpacing: '0.25em' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Main Content Area */}
-      <div className="flex pt-16">
+      <div className="flex flex-col md:flex-row pt-16">
         {/* Left Sidebar - 30% */}
-        <div className="w-[35%] fixed left-0 top-16 h-[calc(100vh-4rem)] p-8">
+        <div className="w-full md:w-[35%] md:fixed md:left-0 md:top-16 md:h-[calc(100vh-4rem)] p-8">
           <div className="flex flex-col h-full">
             <div className="text-left mb-2">
               <div className="w-48 h-52 mb-12 relative">
@@ -186,7 +254,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Right Content Area - 70% */}
-        <div className="w-[65%] ml-[32%] min-h-screen bg-[#e7eeef]">
+        <div className="w-full md:w-[65%] md:ml-[35%] min-h-screen bg-[#e7eeef]">
           <main className="p-8">
             {children}
           </main>
