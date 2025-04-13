@@ -20,8 +20,9 @@ export default function Resume() {
             KAPIL JADHAV
           </h1>
           <a 
-            href="/KapilJadhav_MobileDev.pdf" 
-            download="KapilJadhav_MobileDev.pdf"
+            href="https://drive.google.com/file/d/1c-P5W-66j4UraASXIbHLRyTpGfE22lyD/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 text-gray-800 rounded-md transition-colors duration-300 font-raleway hover:bg-[#5cd8e4]"
             style={{
               fontSize: '0.7em',
