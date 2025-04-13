@@ -9,15 +9,44 @@ export default function Resume() {
       }}
     >
       <section>
-        <h1 
-          className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase mb-6"
-          style={{ 
-            fontSize: '1.2em', 
-            letterSpacing: '0.15em' 
-          }}
-        >
-          KAPIL JADHAV
-        </h1>
+        <div className="flex items-center justify-between mb-4">
+          <h1 
+            className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase"
+            style={{ 
+              fontSize: '1.2em', 
+              letterSpacing: '0.15em' 
+            }}
+          >
+            KAPIL JADHAV
+          </h1>
+          <a 
+            href="/KapilJadhav_MobileDev.pdf" 
+            download="KapilJadhav_MobileDev.pdf"
+            className="flex items-center gap-2 px-4 py-2 text-gray-800 rounded-md transition-colors duration-300 font-raleway hover:bg-[#5cd8e4]"
+            style={{
+              fontSize: '0.7em',
+              letterSpacing: '0.2em',
+              backgroundColor: '#6decf9',
+              border: '1px solid #6decf9'
+            }}
+          >
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-4 w-4" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" 
+              />
+            </svg>
+            DOWNLOAD RESUME
+          </a>
+        </div>
         <p className="text-gray-700 uppercase font-raleway mb-2"
            style={{
              fontFamily: 'Raleway, Helvetica, sans-serif',
@@ -140,19 +169,15 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              WELLNESS360 TECHNOLOGIES INC | SOFTWARE DEVELOPER
+              WELLNESS360 MOBILE APP | <a 
+                href="https://play.google.com/store/apps/details?id=com.wellness360.app&hl=en_IN" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600"
+              >
+                APP LINK
+              </a>
             </h2>
-            <p className="text-gray-700 uppercase font-raleway mb-2"
-               style={{
-                 fontFamily: 'Raleway, Helvetica, sans-serif',
-                 fontSize: '0.7em',
-                 fontWeight: 400,
-                 letterSpacing: '0.2em',
-                 lineHeight: 2.5,
-                 marginTop: '-1em'
-               }}>
-              HYDERABAD | JAN 2023 - PRESENT
-            </p>
             <ul className="list-disc list-inside text-gray-700 uppercase font-raleway ml-4"
                 style={{
                   fontFamily: 'Raleway, Helvetica, sans-serif',
@@ -162,14 +187,42 @@ export default function Resume() {
                   lineHeight: 2.5,
                   marginTop: '-1em'
                 }}>
-              <li>Developed a dynamic web application using Next.js with a responsive UI built using HTML, CSS, and Material UI</li>
-              <li>Integrated third-party libraries and APIs to enhance app functionality with Google Fit, Samsung Health, and Fitbit</li>
-              <li>Designed and implemented personalized health dashboards for actionable insights</li>
-              <li>Experienced in state management using Redux and Context API</li>
-              <li>Implemented Push Notifications for user engagement</li>
-              <li>Worked with cross-functional teams for UX/UI and performance optimization</li>
-              <li>Integrated RESTful APIs with JWT authentication</li>
-              <li>Fostered a collaborative and inclusive work environment</li>
+              <li>Developed and maintained high-quality cross-platform mobile applications for Android and iOS with features like activity tracking, nutrition management, challenges, and personalized journeys — enhancing user engagement and retention.</li>
+              <li>Integrated Health Connect for real-time tracking of steps, calories, and workouts — boosting user accountability and motivation.</li>
+              <li>Implemented Firebase Push Notifications for personalized health tips and reminders — improved user engagement.</li>
+              <li>Integrated third-party SDK for behavior-driven messaging — boosted user retention and session length through personalized communication.</li>
+            </ul>
+          </div>
+
+          <div className="mb-8">
+            <h2 
+              className="text-xl font-semibold text-gray-800 font-raleway tracking-widest uppercase mb-4"
+              style={{ 
+                fontSize: '0.9em', 
+                letterSpacing: '0.15em' 
+              }}
+            >
+              HEALTHIER 901 MOBILE APP | <a 
+                href="https://play.google.com/store/apps/details?id=com.healthier901.app&hl=en_IN" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600"
+              >
+                APP LINK
+              </a>
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 uppercase font-raleway ml-4"
+                style={{
+                  fontFamily: 'Raleway, Helvetica, sans-serif',
+                  fontSize: '0.7em',
+                  fontWeight: 400,
+                  letterSpacing: '0.2em',
+                  lineHeight: 2.5,
+                  marginTop: '-1em'
+                }}>
+              <li>Developed and maintained high-quality cross-platform mobile applications for Android and iOS using React Native, leveraging tools like Android Studio and Xcode for debugging and build management.</li>
+              <li>Built personalized health dashboards using user inputs and health data to provide insights and recommendations for improved health and fitness.</li>
+              <li>Integrated RESTful APIs with secure authentication mechanisms like JWT, and used Redux for efficient and predictable state management — enabling smooth data exchange and user authorization.</li>
             </ul>
           </div>
         </div>
@@ -183,7 +236,7 @@ export default function Resume() {
             letterSpacing: '0.15em' 
           }}
         >
-          SKILLS
+          TECHNICAL SKILLS
         </h1>
         <div className="space-y-6">
           <div className="mb-8">
@@ -194,7 +247,7 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              PROGRAMMING LANGUAGES
+              LANGUAGES & FRAMEWORKS
             </h2>
             <p className="text-gray-700 uppercase font-raleway"
                style={{
@@ -205,7 +258,7 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              REACT.JS, REACT NATIVE, TYPESCRIPT, JAVASCRIPT, HTML, CSS, NODE.JS
+              React.js, React Native, TypeScript, JavaScript (ES6+), Node.js, HTML5, CSS3
             </p>
           </div>
 
@@ -217,7 +270,7 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              LIBRARIES / FRAMEWORKS
+              TOOLS & LIBRARIES
             </h2>
             <p className="text-gray-700 uppercase font-raleway"
                style={{
@@ -228,7 +281,7 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              MATERIAL UI, REDUX, CONTEXT API, EXPRESS.JS
+              Redux, RTK Query, Context API, Webpack, Babel, Chrome DevTools, Git
             </p>
           </div>
 
@@ -240,7 +293,7 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              TOOLS / PLATFORM
+              BACK-END & DATABASES
             </h2>
             <p className="text-gray-700 uppercase font-raleway"
                style={{
@@ -251,7 +304,7 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              WEBPACK, BABEL, CHROME DEVTOOLS, GIT, TROUBLESHOOTING AND DEBUGGING, DATA STRUCTURE & ALGORITHM
+              MongoDB, Express.js, RESTful APIs
             </p>
           </div>
 
@@ -263,7 +316,7 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              DATABASES
+              OTHERS
             </h2>
             <p className="text-gray-700 uppercase font-raleway"
                style={{
@@ -274,7 +327,7 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              MONGODB, SQL
+              Health Connect, Firebase, JWT, Push Notifications, Debugging, Performance Optimization, DSA
             </p>
           </div>
         </div>
@@ -299,7 +352,7 @@ export default function Resume() {
                 letterSpacing: '0.15em' 
               }}
             >
-              WELLNESS360 APP | <a 
+              Wellness360 APP | <a 
                 href="https://play.google.com/store/apps/details?id=com.wellness360.app&hl=en_IN&pli=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -406,7 +459,14 @@ export default function Resume() {
                  lineHeight: 2.5,
                  marginTop: '-1em'
                }}>
-              JAVASCRIPT (INTERMEDIATE) - HACKERRANK
+              JAVASCRIPT (INTERMEDIATE) - <a 
+                href="https://www.hackerrank.com/certificates/iframe/d7f938515eed" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600"
+              >
+                HACKERRANK
+              </a>
             </p>
           </div>
         </div>
