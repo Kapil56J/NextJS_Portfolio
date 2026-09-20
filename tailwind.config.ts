@@ -9,11 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        raleway: ['var(--font-raleway)', 'Helvetica', 'sans-serif'],
+        sans: ["var(--font-inter)", "Helvetica", "Arial", "sans-serif"],
+        mono: ["var(--font-jbmono)", "ui-monospace", "SFMono-Regular", "monospace"],
+      },
+      colors: {
+        background: "var(--background)",
+        surface: "var(--surface)",
+        foreground: "var(--foreground)",
+        muted: "var(--muted)",
+        border: "var(--border)",
+        accent: "var(--accent)",
+        "accent-soft": "var(--accent-soft)",
       },
     },
   },
   plugins: [],
 };
 
-export default config; 
+export default config;
